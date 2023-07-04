@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-scroll";
 
 function header() {
   return (
     <nav className={styles.navbar}>
       <h3>Victor Schmoegel.dev</h3>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><Link to="home" spy={true} smooth={true} offset={50} duration={700}>Home</Link></li>
+        <li><Link to="about" spy={true} smooth={true} offset={50} duration={700}>About</Link></li>
+        <li><Link to="projects" spy={true} smooth={true} offset={50} duration={700}>Projects</Link></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>

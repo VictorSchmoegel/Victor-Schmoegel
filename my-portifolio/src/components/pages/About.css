@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 50rem;
+}
+
+.hero p {
+  font-family: 'Saira', sans-serif;
+  color: #2d2e32;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
