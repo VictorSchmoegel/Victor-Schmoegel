@@ -1,16 +1,54 @@
 .about {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  margin-top: 50rem;
+  background-color: #fff;
+  padding: 15rem 0;
 }
 
-.hero p {
-  font-family: 'Saira', sans-serif;
-  color: #2d2e32;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+
+.content {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.content_img {
+position: relative;
+}
+
+.about_img {
+  border-radius: 1.7rem;
+  height: 25rem;
+  width: 30rem;
+}
+
+.content_text {
+  padding-right: 1.5rem;
+}
+
+.content_text h2 {
+  color: #193aa7;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.content_text h3 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.content_text p {
+  color: #767676;
+  font-family: Mulish,sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
