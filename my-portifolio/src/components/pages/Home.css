@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@700;900&display=swap');
+
 .home_section {
   background-color: #f9f9f9;
   display: flex;
@@ -17,7 +21,7 @@
   align-items: center;
   display: flex;
   gap: 10rem;
-  height: 65rem;
+  height: 55rem;
   justify-content: center;
   position: relative;
 }
@@ -38,8 +42,10 @@
 }
 
 .home_text h1 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 700;
   color: #2d2e32;
-  font-size: 5.5rem;
+  font-size: 5.6rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -47,8 +53,9 @@
 
 .home_text p {
   color: #555;
-  font-family: Mulish,sans-serif;
-  font-size: 1.8rem;
+  border-top: 1px solid rgba(45,46,50,.5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.6;
 }
