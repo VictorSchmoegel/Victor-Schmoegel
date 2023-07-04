@@ -1,0 +1,139 @@
+.home_section {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  height: 65rem;
+  justify-content: center;
+  position: relative;
+}
+
+.home_main {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  position: relative;
+}
+
+.home_text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  position: relative;
+}
+
+.home_text h1 {
+  color: #2d2e32;
+  font-size: 5.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.home_text p {
+  color: #555;
+  font-family: Mulish,sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.home_text span {
+  cursor: pointer;
+  display: flex;
+  gap: 1.3rem;
+  margin: 2.5rem 0;
+}
+
+.home_text a {
+  color: #2d2e32;
+  font-size: 3rem;
+}
+
+.home_img img {
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  border-radius: 50%;
+  width: 25rem;
+}
+
+.skills {
+  align-items: center;
+  bottom: 0;
+  color: #767676;
+  display: flex;
+  font-size: 1.7rem;
+  left: 0;
+  position: absolute;
+}
+
+.skills h2 {
+  border-right: 2px solid rgba(45,46,50,.5);
+  color: #2d2e32;
+  font-family: Mulish,sans-serif;
+  font-weight: 600;
+  margin-right: 7rem;
+  padding-right: 2rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.skills ul li {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  cursor: pointer;
+  display: flex;
+  height: 6.5rem;
+  justify-content: center;
+  width: 6.5rem;
+}
+
+.skills ul li i {
+  color: #2d2e32;
+  font-size: 3rem;
+}
+
+.html_logo:hover {
+  color: #E54C21;
+}
+
+.css_logo:hover {
+  color: #2965f1;
+}
+
+.js_logo:hover {
+  color: #F0DB4F;
+}
+
+.react_logo:hover {
+  color: #61DBFB;
+}
+
+.node_logo:hover {
+  color: #68A063;
+}
+
+.git_logo:hover {
+  color: #F05032;
+}
