@@ -25,6 +25,7 @@
   list-style: none;
 }
 .navbar li {
+  cursor: pointer;
   margin: 0 10px;
 }
 
