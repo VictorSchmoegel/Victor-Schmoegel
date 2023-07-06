@@ -1,10 +1,13 @@
 .about {
   background-color: #fff;
-  padding: 15rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
 }
 
 .container {
-  margin: 0 auto;
+  margin: auto;
   max-width: 107rem;
   padding: 0 4rem;
 }
@@ -51,4 +54,37 @@ position: relative;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1250px) {
+  .about {
+    max-width: 70%;
+    padding: 5rem 0;
+    margin: auto;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content_img img {
+    width: 50%;
+  }
+
+  .content_text {
+    justify-content: center;
+  }
+
+  .content_text h2 {
+    font-size: 1.5rem;
+  }
+
+  .content_text h3 {
+    font-size: 1.3rem;
+  }
+
+  .content_text p {
+    font-size: 1.3rem;
+  }
 }
