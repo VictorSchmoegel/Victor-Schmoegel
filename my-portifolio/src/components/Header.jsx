@@ -10,7 +10,7 @@ function header() {
         <li><Link to="home" spy={true} smooth={true} offset={50} duration={700}>Home</Link></li>
         <li><Link to="about" spy={true} smooth={true} offset={50} duration={700}>About</Link></li>
         <li><Link to="projects" spy={true} smooth={true} offset={50} duration={700}>Projects</Link></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><Link to="contact" spy={true} smooth={true} offset={50} duration={700}>Contact</Link></li>
       </ul>
     </nav>
   );
