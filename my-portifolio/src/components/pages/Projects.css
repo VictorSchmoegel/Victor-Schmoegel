@@ -1,16 +1,99 @@
-.projects {
+#projects {
+  background-color: #f9f9f9;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
+  height: 100vh;
   position: relative;
-  margin-top: 50rem;
+  width: 100%;
 }
 
-.projects p {
-  font-family: 'Saira', sans-serif;
-  color: #2d2e32;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.title_main {
+  align-items: center;
+  color: #767676;
+  display: flex;
+  font-size: 1.7rem;
+  position: relative;
+  margin-left: 20px;
+}
+
+.projects_title {
+  color: #193aa7;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.container_projects {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 4rem;
+}
+
+.content_projects {
+  height: 500px;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.projects_img{
+  display: flex;
+}
+
+.itens {
+  min-height: 200px;
+  min-width: 400px;
+  padding: 14px;
+}
+
+.itens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1250px) {
+
+  .container_projects {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+    max-width: 70%;
+  }
+
+  .content_projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .title_main {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .title_main h2 {
+    font-size: 1.5rem;
+  }
+
+  .projects_img {
+    width: 100%;
+  }
+
+  .itens {
+    min-height: 100px;
+    min-width: 300px;
+  }
+
+  .itens img{
+    width: 80%;
+    gap: 0.8rem;
+  }
 }

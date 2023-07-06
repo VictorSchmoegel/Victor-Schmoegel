@@ -6,7 +6,6 @@
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
   width: 100%;
 }
@@ -37,7 +36,7 @@
 .home_text {
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
+  max-width: 40rem;
   position: relative;
 }
 
@@ -45,7 +44,7 @@
   font-family: 'Saira', sans-serif;
   font-weight: 700;
   color: #2d2e32;
-  font-size: 5.6rem;
+  font-size: 4.6rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -84,7 +83,6 @@
   color: #767676;
   display: flex;
   font-size: 1.7rem;
-  left: 0;
   position: absolute;
 }
 
@@ -143,4 +141,74 @@
 
 .git_logo:hover {
   color: #F05032;
+}
+
+@media screen and (max-width: 1250px) {
+
+  .home_section{
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .home_main {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    max-width: 70%;
+  }
+
+  .home_img img{
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .home_text h1 {
+    font-size: 2.5rem;
+  }
+
+  .home_text p {
+    font-size: 1rem;
+  }
+
+  .home_text span {
+    justify-content: center;
+  }
+
+  .skills {
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(45,46,50,.5);
+    border-right: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .skills ul li {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    width: 2rem;
+  }
+
 }

@@ -3,7 +3,7 @@ import "./About.css";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" className="about">
       <div className="container">
         <div className="content">
           <div className="content_img">
