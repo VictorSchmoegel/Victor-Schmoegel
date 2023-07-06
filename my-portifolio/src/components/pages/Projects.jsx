@@ -31,10 +31,6 @@ function Projects() {
       id: image1,
       title: "texto da imagem 1"
     },
-    {
-      id: image2,
-      title: "texto da imagem 2"
-    },
   ];
 
   const carrocel = useRef();
