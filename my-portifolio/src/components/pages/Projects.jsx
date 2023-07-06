@@ -44,7 +44,23 @@ function Projects() {
     <section id="projects">
       <div className="container_projects">
         <div className="title_main">
-          <h2 className="projects_title">Projects</h2>
+          <h2 className="projects_title">Major Projects</h2>
+        </div>
+        <motion.div ref={carrocel} className="content_projects" whileTap={{ cursor: "grabbing" }}>
+          <motion.div className="projects_img" drag="x" dragConstraints={{ right: 0, left: -width }}>
+
+           {images.map((image => (
+            <motion.div key={image} className="itens">
+              <img src={image.id} alt="project_image" />
+              <p>{image.title}</p>
+            </motion.div>
+           )))}
+
+          </motion.div>
+        </motion.div>
+        
+        <div className="title_main">
+          <h2 className="projects_title">Other projects</h2>
         </div>
         <motion.div ref={carrocel} className="content_projects" whileTap={{ cursor: "grabbing" }}>
           <motion.div className="projects_img" drag="x" dragConstraints={{ right: 0, left: -width }}>
