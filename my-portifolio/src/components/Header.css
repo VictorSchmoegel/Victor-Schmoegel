@@ -1,0 +1,92 @@
+.navbar_central {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  display: flex;
+  font-size: 1.3rem;
+  height: auto;
+  justify-content: space-between;
+  left: 0;
+  padding: 25px 40px 25px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.nav-title {
+  font-family: 'Courier New', Courier, monospace;
+  color: #2d2e32;
+  cursor: pointer;
+}
+
+.links-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-pages {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-pages {
+  color: #2d2e32;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.nav-pages:hover {
+  color: rgb(69, 233, 211);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar_central {
+    display: flex;
+  }
+
+  .nav-title {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .links-list {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+  
+  .links-list.open {
+    display: flex;
+    transform: translateY(0%);
+  }
+
+  .mobile-menu {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-pages {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+}
