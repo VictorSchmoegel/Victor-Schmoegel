@@ -61,3 +61,26 @@
   color: rgb(69, 233, 211);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1250px) {
+  .contact {
+    display: flex;
+  }
+
+  .contact_title p {
+    text-align: center;
+  }
+
+  .contact_title h2 {
+    text-align: center;
+  }
+
+  .contact_container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  .contact_icons {
+    gap: 4rem;
+  }
+}

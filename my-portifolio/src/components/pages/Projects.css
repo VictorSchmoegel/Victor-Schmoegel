@@ -14,9 +14,11 @@
   font-size: 1.7rem;
   position: relative;
   margin-left: 20px;
+  text-align: center;
 }
 
 .projects_title {
+  text-align: center;
   color: #193aa7;
   font-size: 1.7rem;
   font-weight: 700;
@@ -88,8 +90,8 @@
   }
 
   .itens {
-    min-height: 100px;
-    min-width: 300px;
+    width: 100%;
+    min-width: fit-content;
   }
 
   .itens img{
