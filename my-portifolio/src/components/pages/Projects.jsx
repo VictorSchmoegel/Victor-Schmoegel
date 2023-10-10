@@ -13,23 +13,23 @@ function Projects() {
   [ 
     {
       id: image1,
-      title: "texto da imagem 1"
+      title: "In Progress..."
     },
     {
       id: image2,
-      title: "texto da imagem 2"
+      title: "In Progress..."
     },
     {
       id: image3,
-      title: "texto da imagem 3"
+      title: "In Progress..."
     },
     {
       id: image4,
-      title: "texto da imagem 4"
+      title: "In Progress..."
     },
     {
       id: image1,
-      title: "texto da imagem 1"
+      title: "In Progress..."
     },
   ];
 
@@ -52,7 +52,7 @@ function Projects() {
            {images.map((image => (
             <motion.div key={image} className="itens">
               <img src={image.id} alt="project_image" />
-              <p>{image.title}</p>
+              <p className="project_title">{image.title}</p>
             </motion.div>
            )))}
 
@@ -68,7 +68,7 @@ function Projects() {
            {images.map((image => (
             <motion.div key={image} className="itens">
               <img src={image.id} alt="project_image" />
-              <p>{image.title}</p>
+              <p className="project_title">{image.title}</p>
             </motion.div>
            )))}
 

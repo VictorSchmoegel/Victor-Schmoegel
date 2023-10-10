@@ -11,9 +11,11 @@ function About() {
           </div>
           <div className="content_text">
             <h2>About Me</h2>
-            <h3>Um desenvolvedor bem dedicado</h3>
+            <h3>
+              Fullstack Developer
+            </h3>
             <p> 
-              I'm a full stack developer, I have been working with web development since 2019, I have experience with HTML, CSS, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, MySQL, Git, GitHub, among others. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur illo quam perspiciatis eaque, ab eveniet cupiditate quisquam neque praesentium nemo itaque dolorum provident suscipit nesciunt. Quas quam facere libero.
+              I'm a full stack developer. I have been working with web development since 2022. I have experience with HTML, CSS, JavaScript, TypeScript, ReactJS, NodeJS, ExpressJS, MongoDB, MySQL, Git, GitHub, among others.
             </p>
           </div>
         </div>
