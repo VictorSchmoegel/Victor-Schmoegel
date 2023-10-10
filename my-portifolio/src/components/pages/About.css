@@ -83,7 +83,8 @@
   }
 
   .content_text p {
-    justify-content: justify;
     font-size: 1.3rem;
-  }
+    text-align: justify;
+    min-width: 15rem;
+}
 }
