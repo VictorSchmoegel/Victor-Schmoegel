@@ -95,6 +95,7 @@
   }
 
   .contact_content {
+    padding: 8rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
