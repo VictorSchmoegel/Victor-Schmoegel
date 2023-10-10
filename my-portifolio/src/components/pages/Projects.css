@@ -14,9 +14,11 @@
   font-size: 1.7rem;
   position: relative;
   margin-left: 20px;
+  text-align: center;
 }
 
 .projects_title {
+  text-align: center;
   color: #193aa7;
   font-size: 1.7rem;
   font-weight: 700;
@@ -54,6 +56,14 @@
   pointer-events: none;
 }
 
+.project_title {
+  font-family: 'Courier New', Courier, monospace;
+  color: #2d2e32;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
 @media screen and (max-width: 1250px) {
 
   .container_projects {
@@ -88,8 +98,8 @@
   }
 
   .itens {
-    min-height: 100px;
-    min-width: 300px;
+    width: 100%;
+    min-width: fit-content;
   }
 
   .itens img{

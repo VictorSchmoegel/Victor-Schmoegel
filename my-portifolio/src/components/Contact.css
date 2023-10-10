@@ -61,3 +61,69 @@
   color: rgb(69, 233, 211);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1250px) {
+  .contact {
+    display: flex;
+  }
+
+  .contact_title p {
+    text-align: center;
+  }
+
+  .contact_title h2 {
+    text-align: center;
+  }
+
+  .contact_container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  .contact_icons {
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact {
+    padding: 8rem 0;
+  }
+
+  .contact_container {
+    padding: 0 1rem;
+  }
+
+  .contact_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_title p {
+    font-size: 1.2rem;
+  }
+
+  .contact_title h2 {
+    font-size: 2rem;
+  }
+
+  .contact_icons span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .email_icon {
+    width: auto;
+  }
+
+  .contact_email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}

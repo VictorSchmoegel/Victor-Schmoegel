@@ -9,8 +9,8 @@ function Home() {
         <div className="content">
           <div className="home_main">
             <div className="home_text">
-              <h1>Front-End Developer</h1>
-              <p>Hi, I'm Victor Schmoegel. Enthusiast in front end development and passionate about technology. Based in Brasília, Brazil.</p>
+              <h1>Fullstack Developer</h1>
+              <p>Hi, I'm Victor Schmoegel. Enthusiast in web development and passionate about technology. Based in Brasília, Brazil.</p>
               <span>
                 <a target='blank' href="https://www.linkedin.com/in/victor-schmoegel-595b8b231/"><FaLinkedin /></a>
                 <a target='blank' href="https://github.com/VictorSchmoegel"><FaGithubSquare /></a>

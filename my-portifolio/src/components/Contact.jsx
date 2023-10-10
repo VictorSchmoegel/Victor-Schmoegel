@@ -17,9 +17,6 @@ function Contact() {
               <a className="contact_email" href="victorschmoegel@gmail.com">victorschmoegel@gmail.com</a>
             </span>
           </div>
-          <div className="contact_email">
-            
-          </div>
         </div>
       </div>
     </section>
