@@ -128,3 +128,23 @@
     margin-top: 1rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .contact {
+    padding-top: 12rem;
+    padding-bottom: 0;
+  }
+
+  .contact_title h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact_icons span a {
+    font-size: 1.1rem;
+  }
+
+  .email_icon {
+    display: none;
+  }
+
+}

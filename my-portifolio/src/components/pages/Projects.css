@@ -7,6 +7,12 @@
   width: 100%;
 }
 
+.container_projects {
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 5rem 0;
+}
+
 .title_main {
   align-items: center;
   color: #767676;
@@ -24,12 +30,6 @@
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
-}
-
-.container_projects {
-  margin: 0 auto;
-  max-width: 1600px;
-  padding: 0 4rem;
 }
 
 .content_projects {
