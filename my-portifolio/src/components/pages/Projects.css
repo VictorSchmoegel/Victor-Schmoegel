@@ -55,6 +55,7 @@
   object-fit: cover;
   border-radius: 10px;
   pointer-events: none;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 
 .project_title {
@@ -63,6 +64,52 @@
   text-decoration: none;
   font-size: 1.2rem;
   padding-top: 0.5rem;
+}
+
+.links {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 40px 15px 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #2d2e32;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.links a:hover {
+  color: rgb(69, 233, 211);
+}
+
+.links a i {
+  margin-right: 5px;
+}
+
+.links p {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.links_div {
+  align-items: center;
+  border-right: 2px solid rgba(45,46,50,.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+  padding-right: 1rem;
+}
+
+.links_div a {
+  gap: 0.5rem;
 }
 
 @media screen and (max-width: 1250px) {
