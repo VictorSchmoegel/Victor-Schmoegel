@@ -1,44 +1,66 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
-import {motion} from "framer-motion";
+import SwiperCore from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/bundle';
+import { FaGithubAlt, FaMousePointer } from "react-icons/fa";
 
 import image1 from "../../images/1.jpg";
 import image2 from "../../images/2.jpg";
 import image3 from "../../images/3.jpg";
 import image4 from "../../images/4.jpg";
+import CarRentalz2 from "../../images/CarRentalz2.png";
+
+SwiperCore.use([Navigation, Pagination]);
 
 function Projects() {
 
-  const images = 
-  [ 
-    {
-      id: image1,
-      title: "In Progress..."
-    },
-    {
-      id: image2,
-      title: "In Progress..."
-    },
-    {
-      id: image3,
-      title: "In Progress..."
-    },
-    {
-      id: image4,
-      title: "In Progress..."
-    },
-    {
-      id: image1,
-      title: "In Progress..."
-    },
-  ];
+  const images =
+    [
+      {
+        id: CarRentalz2,
+        title: "Car Rentalz",
+        link: "https://car-rentalz-i1e6.vercel.app/",
+        githubLink: "https://github.com/VictorSchmoegel/car-rentalz/tree/main/car-rentalz",
+        description: "Discover Car Rentalz, where JavaScript and React come together to offer you a seamless car rental experience. Explore our modern platform and find the perfect ride for your journey with ease."
+      },
+      {
+        id: image2,
+        description: "In Progress..."
+      },
+      {
+        id: image3,
+        description: "In Progress..."
+      },
+      {
+        id: image4,
+        description: "In Progress..."
+      },
+      {
+        id: image1,
+        description: "In Progress..."
+      },
+    ];
 
-  const carrocel = useRef();
-  const [width, setWidth] = useState(0);
+  const [swiper, setSwiper] = useState(2);
+  console.log(setSwiper);
 
   useEffect(() => {
-    setWidth(carrocel.current?.scrollWidth - carrocel.current?.offsetWidth);
-  }, [])
+    const handlerResize = () => {
+      if (window.innerWidth < 1251) {
+        setSwiper(1);
+      } else {
+        setSwiper(2);
+      }
+    };
+    handlerResize();
+    window.addEventListener("resize", handlerResize);
+
+    return () => {
+      window.removeEventListener("resize", handlerResize);
+    }
+  }, [swiper]);
 
   return (
     <section id="projects">
@@ -46,34 +68,35 @@ function Projects() {
         <div className="title_main">
           <h2 className="projects_title">Major Projects</h2>
         </div>
-        <motion.div ref={carrocel} className="content_projects" whileTap={{ cursor: "grabbing" }}>
-          <motion.div className="projects_img" drag="x" dragConstraints={{ right: 0, left: -width }}>
-
-           {images.map((image => (
-            <motion.div key={image} className="itens">
-              <img src={image.id} alt="project_image" />
-              <p className="project_title">{image.title}</p>
-            </motion.div>
-           )))}
-
-          </motion.div>
-        </motion.div>
-        
-        <div className="title_main">
-          <h2 className="projects_title">Other projects</h2>
-        </div>
-        <motion.div ref={carrocel} className="content_projects" whileTap={{ cursor: "grabbing" }}>
-          <motion.div className="projects_img" drag="x" dragConstraints={{ right: 0, left: -width }}>
-
-           {images.map((image => (
-            <motion.div key={image} className="itens">
-              <img src={image.id} alt="project_image" />
-              <p className="project_title">{image.title}</p>
-            </motion.div>
-           )))}
-
-          </motion.div>
-        </motion.div>
+        <Swiper
+          slidesPerView={swiper}
+          navigation
+          pagination={{ clickable: true }}
+          className="content_projects"
+        >
+          {images.map((image) => (
+            <SwiperSlide key={image.id} className="itens">
+              <a href={image.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={image.id}
+                  alt="project_image"
+                  style={{ width: '100%', height: '70%' }}
+                />
+              </a>
+              <div className="links">
+                <div className="links_div">
+                  <a href={image.githubLink} target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github"></i> <FaGithubAlt /> GitHub
+                  </a>
+                  <a href={image.link} target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github"></i> <FaMousePointer /> Live
+                  </a>
+                </div>
+                <p>{image.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
