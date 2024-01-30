@@ -11,6 +11,7 @@ import image2 from "../../images/2.jpg";
 import image3 from "../../images/3.jpg";
 import image4 from "../../images/4.jpg";
 import CarRentalz2 from "../../images/CarRentalz2.png";
+import PrestigePalaces from "../../images/PrestigePalaces.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -26,8 +27,10 @@ function Projects() {
         description: "Discover Car Rentalz, where JavaScript and React come together to offer you a seamless car rental experience. Explore our modern platform and find the perfect ride for your journey with ease."
       },
       {
-        id: image2,
-        description: "In Progress..."
+        id: PrestigePalaces,
+        link: "https://prestige-palaces-gpq1.onrender.com/",
+        githubLink: "https://github.com/VictorSchmoegel/Prestige-Palaces",
+        description: "Welcome to PrestigePalaces, a MERN application where MongoDB, Express, React, Node.js, Tailwind CSS, and other technologies converge to redefine luxury real estate. Explore our collection of homes and experience the pinnacle of modern living."
       },
       {
         id: image3,
@@ -39,6 +42,10 @@ function Projects() {
       },
       {
         id: image1,
+        description: "In Progress..."
+      },
+      {
+        id: image2,
         description: "In Progress..."
       },
     ];

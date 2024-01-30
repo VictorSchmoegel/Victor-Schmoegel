@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedin, FaGithubSquare, FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs, FaGitAlt, FaJava, FaPython } from "react-icons/fa";
+import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import './Home.css';
 
 function Home() {
@@ -27,25 +28,29 @@ function Home() {
                   <li>
                     <i className="html_logo"><FaHtml5 /></i>
                   </li>
-
                   <li>
                     <i className="css_logo"><FaCss3 /></i>
                   </li>
-
                   <li>
                     <i className="js_logo"><FaJs /></i>
                   </li>
-
                   <li>
                     <i className="react_logo"><FaReact /></i>
                   </li>
-
                   <li>
                     <i className="node_logo"><FaNodeJs /></i>
                   </li>
-
                   <li>
-                    <i className="git_logo"><FaGitAlt /></i>
+                    <i className="tail_logo"><SiTailwindcss /></i>
+                  </li>
+                  <li>
+                    <i className="mongo_logo"><SiMongodb /></i>
+                  </li>
+                  <li>
+                    <i className="java_logo"><FaJava /></i>
+                  </li>
+                  <li>
+                    <i className="python_logo"><FaPython /></i>
                   </li>
                 </ul>
               </div>
