@@ -84,6 +84,7 @@
   display: flex;
   font-size: 1.7rem;
   position: absolute;
+  margin-bottom: 2rem;
 }
 
 .skills h2 {
@@ -109,12 +110,13 @@
   box-shadow: 0 0 10px rgba(0,0,0,.09);
   cursor: pointer;
   display: flex;
-  height: 6.5rem;
+  height: 4.3rem;
   justify-content: center;
-  width: 6.5rem;
+  width: 4.3rem;
 }
 
 .skills ul li i {
+  align-self: self-end;
   color: #2d2e32;
   font-size: 3rem;
 }
@@ -141,6 +143,22 @@
 
 .git_logo:hover {
   color: #F05032;
+}
+
+.tail_logo:hover {
+  color: #38BDF8;
+}
+
+.mongo_logo:hover {
+  color: #00684A;
+}
+
+.java_logo:hover {
+  color: #F89B24;
+}
+
+.python_logo:hover {
+  color: #3B74A2;
 }
 
 @media screen and (max-width: 1250px) {
