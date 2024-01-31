@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithubSquare, FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs, FaGitAlt, FaJava, FaPython } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import './Home.css';
 

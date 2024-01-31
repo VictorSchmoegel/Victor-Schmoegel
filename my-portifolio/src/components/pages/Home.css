@@ -229,4 +229,27 @@
     width: 2rem;
   }
 
+  .skills ul li i {
+    align-self: self-end;
+    color: #2d2e32;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 465px) {
+
+  .skills {
+    margin-top: 2rem;
+  }
+
+  .home_text a {
+    color: #2d2e32;
+    font-size: 1.5rem;
+  }
+
+  .skills ul {
+    gap: 0.5rem;
+  }
+
 }
